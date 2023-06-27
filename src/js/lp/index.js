@@ -175,7 +175,7 @@ function initForm()
 
 
 
-		$.post( "https://alexsab.ru/lead/baic/krasnodar/", $(this).serialize()+"&form="+this.id+"&form_title="+_form_title, function( data )
+		$.post( "https://alexsab.ru/lead/test", $(this).serialize()+"&form="+this.id+"&form_title="+_form_title, function( data )
 		{
 			console.log('form_site :'+ window.location.href);
 			console.log('form_name :'+ _form_name);
