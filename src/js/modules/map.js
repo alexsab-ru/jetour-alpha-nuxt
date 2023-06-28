@@ -1,4 +1,4 @@
-const mapId = 'map1';
+const mapId = "map1";
 
 function initYandexMap() {
 	if (document.getElementById(mapId) != null) {
@@ -6,9 +6,10 @@ function initYandexMap() {
 			var _ball_bg = "./img/map.balloon.png";
 			var _ball_Offset = [-21, -58];
 			var _ball_Size = [43, 62];
-			var myMap = new ymaps.Map(mapId,
+			var myMap = new ymaps.Map(
+				mapId,
 				{
-					center: [53.184186,50.152134],
+					center: [53.184186, 50.152134],
 					zoom: 16,
 					controls: ["zoomControl"],
 				},
@@ -18,7 +19,7 @@ function initYandexMap() {
 			);
 			myMap.behaviors.disable("scrollZoom");
 			var myPlacemark1 = new ymaps.Placemark(
-				[53.184186,50.152134],
+				[53.184186, 50.152134],
 				{
 					balloonContent: "г. Самара, ул. Ново-Урицкая, д. 22",
 					hintContent: "г. Самара, ул. Ново-Урицкая, д. 22",
@@ -74,16 +75,18 @@ function initYandexMapWaitOnHover() {
 		}
 	}
 
-	$("#map1").on("touchstart", function () {
-		__load_yandex();
-	});
-	$("#map1").mouseenter(function () {
-		__load_yandex();
-	});
-	$("#map1").click(function () {
-		__load_yandex();
-	});
+	if (document.getElementById(mapId) != null) {
+		const mapBlock = document.getElementById(mapId);
+		mapBlock.addEventListener("touchstart", function () {
+			__load_yandex();
+		});
+		mapBlock.addEventListener("mouseenter", function () {
+			__load_yandex();
+		});
+		mapBlock.click(function () {
+			__load_yandex();
+		});
+	}
 }
-
 
 initYandexMapWaitOnHover();
