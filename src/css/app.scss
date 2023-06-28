@@ -43,7 +43,7 @@
 }
 
 .btn{
-    @apply px-8 sm:px-14 border border-accent py-3 bg-accent text-white text-center font-medium transition-all duration-300 hover:opacity-80;
+    @apply cursor-pointer px-8 sm:px-14 border border-accent py-3 bg-accent text-white text-center font-medium transition-all duration-300 hover:opacity-90;
     &.btn-o{
         @apply bg-transparent text-accent hover:opacity-100 hover:bg-accent hover:text-white;
     }
