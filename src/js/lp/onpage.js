@@ -8,18 +8,7 @@ $(function () {
 		return;
 	});
 
-	$(".color-link").click(function (e) {
-		if ($(this).hasClass("active")) return false;
-		const parent = $(this).closest(".model");
-		const dir = parent.attr("data-dir");
-		const color = $(this).attr("data-color");
-		const colorName = $(this).attr("title");
-		parent.find(".color-link").removeClass("active");
-		parent.find(`[data-color=${color}]`).addClass("active");
-		parent.find(".color-img-preview").attr("src", `img/${dir}/${color}.png`);
-		parent.find(".color-name").text(colorName);
-		return false;
-	});
+	
 
     function setLeftPos(){
         const ww = $(window).width();
