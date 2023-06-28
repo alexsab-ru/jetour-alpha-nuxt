@@ -1,4 +1,4 @@
-const mapId = "map1";
+const mapId = "map";
 
 function initYandexMap() {
 	if (document.getElementById(mapId) != null) {

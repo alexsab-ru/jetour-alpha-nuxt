@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "lp/index.scss";
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    position: relative;
+}
 
 .color-link{
     @apply relative block w-6 sm:w-8 lg:w-10 h-6 sm:h-8 lg:h-10 rounded-full shadow-sm shadow-[#eee];
