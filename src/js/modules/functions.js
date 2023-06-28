@@ -5,10 +5,12 @@ function setLeftPos() {
     const cw = document.querySelector('.container').offsetWidth; 
     const mapInfo = document.querySelector('.map-info');
 
-    if (ww >= 1024) { 
-        mapInfo.style.left = (ww - cw) / 2 + 'px'; 
-    } else { 
-        mapInfo.removeAttribute('style'); 
+    if(mapInfo != null){
+        if (ww >= 1024) { 
+            mapInfo.style.left = (ww - cw) / 2 + 'px'; 
+        } else { 
+            mapInfo.removeAttribute('style'); 
+        }
     } 
 }
 

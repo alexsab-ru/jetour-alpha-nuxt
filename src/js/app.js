@@ -3,4 +3,4 @@ import './lp/index.js';
 
 import './modules/functions';
 import './modules/color.links';
-import './modules/maps';
+import './modules/map';
