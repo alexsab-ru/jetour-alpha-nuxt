@@ -8,21 +8,6 @@ $(function () {
 		return;
 	});
 
-	
-
-    function setLeftPos(){
-        const ww = $(window).width();
-        const cw = $('.container').width();
-        if( ww >= 1024){
-            $('.map-info').css('left', (ww - cw) / 2 + 'px');
-        }else{
-            $('.map-info').removeAttr('style');
-        }
-    }
-    setLeftPos()
-    $(window).resize(function(){
-        setLeftPos()
-    })
 
 });
 
@@ -59,21 +44,5 @@ $(function () {
 		});
 		/*var scrollPos = $(document).scrollTop();
         console.log(scrollPos);*/
-	});
-});
-
-$(function () {
-	$(".disclamer_switch").click(function () {
-		$(".disclamer").slideToggle({
-			start: function () {
-				$("html, body").animate(
-					{
-						scrollTop: $("html, body").height(),
-					},
-					"slow"
-				);
-			},
-		});
-		return false;
 	});
 });
