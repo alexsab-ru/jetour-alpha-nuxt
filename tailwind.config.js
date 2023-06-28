@@ -19,7 +19,11 @@ export const theme = {
     black: colors.black,
     gray: colors.gray,
   },
-  extend: {},
+  extend: {
+    fontFamily: {
+      'sans': ['Roboto', ...defaultTheme.fontFamily.sans],
+    },
+  },
 }
 export const plugins = []
 
