@@ -17,30 +17,52 @@
 
 		<link href="/src/scss/app.scss" rel="stylesheet" />
 		<!-- Yandex.Metrika counter -->
-		<script type="text/javascript" >
-		if (location.host == "jetour-alpha.ru") {
-		(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-		m[i].l=1*new Date();
-		for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-		k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+		<script type="text/javascript">
+			if (location.host == "jetour-alpha.ru") {
+				(function (m, e, t, r, i, k, a) {
+					m[i] =
+						m[i] ||
+						function () {
+							(m[i].a = m[i].a || []).push(arguments);
+						};
+					m[i].l = 1 * new Date();
+					for (var j = 0; j < document.scripts.length; j++) {
+						if (document.scripts[j].src === r) {
+							return;
+						}
+					}
+					(k = e.createElement(t)),
+						(a = e.getElementsByTagName(t)[0]),
+						(k.async = 1),
+						(k.src = r),
+						a.parentNode.insertBefore(k, a);
+				})(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-		ym(94235674, "init", {
-			clickmap:true,
-			trackLinks:true,
-			accurateTrackBounce:true,
-			webvisor:true
-		});
-		}
+				ym(94235674, "init", {
+					clickmap: true,
+					trackLinks: true,
+					accurateTrackBounce: true,
+					webvisor: true,
+				});
+			}
 		</script>
 		<!-- /Yandex.Metrika counter -->
 	</head>
 
 	<body>
-	<noscript><div><img src="https://mc.yandex.ru/watch/94235674" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+		<noscript
+			><div>
+				<img
+					src="https://mc.yandex.ru/watch/94235674"
+					style="position: absolute; left: -9999px"
+					alt=""
+				/></div
+		></noscript>
 		<header class="sticky md:fixed w-full top-0 left-0 bg-white/90 z-30">
 			<div class="container">
-				<div class="flex max-[450px]:flex-col items-center flex-wrap gap-3 sm:gap-0 max-[450px]:justify-center justify-between py-2 md:py-4">
+				<div
+					class="flex max-[450px]:flex-col items-center flex-wrap gap-3 sm:gap-0 max-[450px]:justify-center justify-between py-2 md:py-4"
+				>
 					<div
 						class="flex items-center flex-nowrap justify-center flex-col lg:flex-row gap-1 lg:gap-4"
 					>
@@ -56,9 +78,7 @@
 					<div class="top_addr hidden xl:block">
 						г. Самара, ул. Ново-Урицкая, д.&nbsp;22
 					</div>
-					<a
-						href="tel:+78469777779"
-						class="top_phone font-medium md:text-lg"
+					<a href="tel:+78469777779" class="top_phone font-medium md:text-lg"
 						>+7 (846) 9 777-779</a
 					>
 
@@ -70,7 +90,6 @@
 					>
 						Заказать звонок
 					</a>
-
 				</div>
 			</div>
 		</header>
@@ -86,7 +105,8 @@
 						Новые автомобили по&nbsp;цене заводов изготовителей!
 					</h1>
 					<span class="block text-xs sm:text-xl md:text-2xl mt-[2%]"
-						>Уже доступны для бронирования в&nbsp;дилерском центре Альфа в&nbsp;Самаре!</span
+						>Уже доступны для бронирования в&nbsp;дилерском центре Альфа
+						в&nbsp;Самаре!</span
 					>
 				</div>
 				<a
@@ -181,7 +201,9 @@
 						data-form_name="Подобрать комплектацию. Jetour Dashing"
 					>
 						Подобрать комплектацию
-						<span class="w-4 h-4 bg-accent text-white rounded-full flex items-center justify-center translate-x-0 transition-transform duration-300 ease-in-out group-hover:translate-x-1">
+						<span
+							class="w-4 h-4 bg-accent text-white rounded-full flex items-center justify-center translate-x-0 transition-transform duration-300 ease-in-out group-hover:translate-x-1"
+						>
 							<span class="mdi mdi-chevron-right pl-0.5"></span>
 						</span>
 					</a>
@@ -193,7 +215,9 @@
 						data-title="Выгодный трейд-ин"
 						data-form_name="Выгодный трейд-ин. Jetour Dashing"
 					>
-						<span class="w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center">
+						<span
+							class="w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center"
+						>
 							<span class="mdi mdi-wallet-bifold-outline text-2xl"></span>
 						</span>
 						Выгодный трейд-ин
@@ -204,7 +228,9 @@
 						data-title="Выгодный кредит"
 						data-form_name="Выгодный кредит. Jetour Dashing"
 					>
-						<span class="w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center">
+						<span
+							class="w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center"
+						>
 							<span class="mdi mdi-gift-outline font-normal text-2xl"></span>
 						</span>
 						Выгодный кредит
@@ -378,8 +404,7 @@
 					<div>
 						<h2 class="text-2xl sm:text-5xl text-white tracking-widest uppercase">
 							Jetour
-							<b
-								class="font-bold text-black tracking-normal text-5xl sm:text-8xl"
+							<b class="font-bold text-black tracking-normal text-5xl sm:text-8xl"
 								>x90Plus</b
 							>
 						</h2>
@@ -394,7 +419,9 @@
 						data-form_name="Подобрать комплектацию. Jetour x90Plus"
 					>
 						Подобрать комплектацию
-						<span class="w-4 h-4 bg-accent text-white rounded-full flex items-center justify-center translate-x-0 transition-transform duration-300 ease-in-out group-hover:translate-x-1">
+						<span
+							class="w-4 h-4 bg-accent text-white rounded-full flex items-center justify-center translate-x-0 transition-transform duration-300 ease-in-out group-hover:translate-x-1"
+						>
 							<span class="mdi mdi-chevron-right pl-0.5"></span>
 						</span>
 					</a>
@@ -406,7 +433,9 @@
 						data-title="Выгодный трейд-ин"
 						data-form_name="Выгодный трейд-ин. Jetour x90Plus"
 					>
-						<span class="w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center">
+						<span
+							class="w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center"
+						>
 							<span class="mdi mdi-wallet-bifold-outline text-2xl"></span>
 						</span>
 						Выгодный трейд-ин
@@ -417,7 +446,9 @@
 						data-title="Выгодный кредит"
 						data-form_name="Выгодный кредит. Jetour x90Plus"
 					>
-						<span class="w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center">
+						<span
+							class="w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center"
+						>
 							<span class="mdi mdi-gift-outline font-normal text-2xl"></span>
 						</span>
 						Выгодный кредит
@@ -547,21 +578,50 @@
 					<p>Сделаем лучше!</p>
 					<p>Оставьте Ваши контакты и в ближайшее время мы перезвоним!</p>
 					<form class="mt-14 sm:max-w-md text-base">
-						<input type="hidden" name="form" value="Улучшим предложение конкурентов" />
+						<input
+							type="hidden"
+							name="form"
+							value="Улучшим предложение конкурентов"
+						/>
 
 						<div class="w-full mb-4">
-							<input type="tel" name="phone" class="border border-black border-opacity-20 transition-all focus:border-opacity-90 px-4 py-2.5 mb-1.5 outline-none w-full font-normal text-gray-900" placeholder="+7 999 999-99-99 *">
-							<div class="error-message text-xs text-red-500 hidden phone">Веден некорректный номер телефона</div>
-						</div>
-						<input type="submit" class="btn w-full mb-4" value="Отправить">
-						<input type="checkbox" name="subscribe" class="absolute w-0 h-0 opacity-0 invisible">
-						<label class="cursor-pointer flex items-center flex-wrap">
-							<input type="checkbox" name="agree" class="absolute w-0 h-0 opacity-0 invisible">
-							<div class="flex flex-wrap gap-x-2 text-white">
-								<span class="fake-checkbox-white mt-0.5 w-4 h-4 border border-white inline-block flex-shrink-0 transition-all relative"></span>
-								<span>Я согласен на</span> <a href="/privacy-policy.pdf" class="text-white underline transition-all hover:no-underline" target="_blank">обработку персональных данных</a>
+							<input
+								type="tel"
+								name="phone"
+								class="border border-black border-opacity-20 transition-all focus:border-opacity-90 px-4 py-2.5 mb-1.5 outline-none w-full font-normal text-gray-900"
+								placeholder="+7 999 999-99-99 *"
+							/>
+							<div class="error-message text-xs text-red-500 hidden phone">
+								Веден некорректный номер телефона
 							</div>
-							<div class="error-message text-xs text-red-500 mt-1 w-full hidden agree">Чтобы продолжить, установите флажок</div>
+						</div>
+						<input type="submit" class="btn w-full mb-4" value="Отправить" />
+						<input
+							type="checkbox"
+							name="subscribe"
+							class="absolute w-0 h-0 opacity-0 invisible"
+						/>
+						<label class="cursor-pointer flex items-center flex-wrap">
+							<input
+								type="checkbox"
+								name="agree"
+								class="absolute w-0 h-0 opacity-0 invisible"
+							/>
+							<div class="flex flex-wrap gap-x-2 text-white">
+								<span
+									class="fake-checkbox-white mt-0.5 w-4 h-4 border border-white inline-block flex-shrink-0 transition-all relative"
+								></span>
+								<span>Я согласен на</span>
+								<a
+									href="/privacy-policy.pdf"
+									class="text-white underline transition-all hover:no-underline"
+									target="_blank"
+									>обработку персональных данных</a
+								>
+							</div>
+							<div class="error-message text-xs text-red-500 mt-1 w-full hidden agree">
+								Чтобы продолжить, установите флажок
+							</div>
 						</label>
 					</form>
 				</div>
@@ -572,63 +632,100 @@
 			<div class="container">
 				<h2 class="text-xl sm:text-4xl font-medium mb-8 sm:mb-14">Услуги ДЦ</h2>
 
-				<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-5">
-
-					<div class="rounded-lg bg-gray-100 p-1 sm:p-3 flex items-center flex-nowrap gap-1 sm:gap-2 shadow-lg">
+				<div
+					class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-5"
+				>
+					<div
+						class="rounded-lg bg-gray-100 p-1 sm:p-3 flex items-center flex-nowrap gap-1 sm:gap-2 shadow-lg"
+					>
 						<span class="mdi mdi-car-settings text-xl sm:text-2xl md:text-4xl"></span>
 						<span class="block text-xs sm:text-lg 2xl:text-xl">Сервис</span>
 					</div>
-					<div class="rounded-lg bg-gray-100 p-1 sm:p-3 flex items-center flex-nowrap gap-1 sm:gap-2 shadow-lg">
+					<div
+						class="rounded-lg bg-gray-100 p-1 sm:p-3 flex items-center flex-nowrap gap-1 sm:gap-2 shadow-lg"
+					>
 						<span class="mdi mdi-car text-xl sm:text-2xl md:text-4xl"></span>
 						<span class="block text-xs sm:text-lg 2xl:text-xl">Тест-драйв</span>
 					</div>
-					<div class="rounded-lg bg-gray-100 p-1 sm:p-3 flex items-center flex-nowrap gap-1 sm:gap-2 shadow-lg">
+					<div
+						class="rounded-lg bg-gray-100 p-1 sm:p-3 flex items-center flex-nowrap gap-1 sm:gap-2 shadow-lg"
+					>
 						<span class="mdi mdi-car-wash text-xl sm:text-2xl md:text-4xl"></span>
 						<span class="block text-xs sm:text-lg 2xl:text-xl">Мойка</span>
 					</div>
-					<div class="rounded-lg bg-gray-100 p-1 sm:p-3 flex items-center flex-nowrap gap-1 sm:gap-2 shadow-lg">
+					<div
+						class="rounded-lg bg-gray-100 p-1 sm:p-3 flex items-center flex-nowrap gap-1 sm:gap-2 shadow-lg"
+					>
 						<span class="mdi mdi-coffee text-xl sm:text-2xl md:text-4xl"></span>
 						<span class="block text-xs sm:text-lg 2xl:text-xl">Кафе</span>
 					</div>
-					<div class="rounded-lg bg-gray-100 p-1 sm:p-3 flex items-center flex-nowrap gap-1 sm:gap-2 shadow-lg">
+					<div
+						class="rounded-lg bg-gray-100 p-1 sm:p-3 flex items-center flex-nowrap gap-1 sm:gap-2 shadow-lg"
+					>
 						<span class="mdi mdi-car-wrench text-xl sm:text-2xl md:text-4xl"></span>
 						<span class="block text-xs sm:text-lg 2xl:text-xl">Кузовной ремонт</span>
 					</div>
-					<div class="rounded-lg bg-gray-100 p-1 sm:p-3 flex items-center flex-nowrap gap-1 sm:gap-2 shadow-lg">
-						<span class="mdi mdi-shield-check-outline text-xl sm:text-2xl md:text-4xl"></span>
-						<span class="block text-xs sm:text-lg 2xl:text-xl">Гарантийный ремонт</span>
+					<div
+						class="rounded-lg bg-gray-100 p-1 sm:p-3 flex items-center flex-nowrap gap-1 sm:gap-2 shadow-lg"
+					>
+						<span
+							class="mdi mdi-shield-check-outline text-xl sm:text-2xl md:text-4xl"
+						></span>
+						<span class="block text-xs sm:text-lg 2xl:text-xl"
+							>Гарантийный ремонт</span
+						>
 					</div>
-					<div class="rounded-lg bg-gray-100 p-1 sm:p-3 flex items-center flex-nowrap gap-1 sm:gap-2 shadow-lg">
+					<div
+						class="rounded-lg bg-gray-100 p-1 sm:p-3 flex items-center flex-nowrap gap-1 sm:gap-2 shadow-lg"
+					>
 						<span class="mdi mdi-car-key text-xl sm:text-2xl md:text-4xl"></span>
 						<span class="block text-xs sm:text-lg 2xl:text-xl">Новые автомобили</span>
 					</div>
-					<div class="rounded-lg bg-gray-100 p-1 sm:p-3 flex items-center flex-nowrap gap-1 sm:gap-2 shadow-lg">
+					<div
+						class="rounded-lg bg-gray-100 p-1 sm:p-3 flex items-center flex-nowrap gap-1 sm:gap-2 shadow-lg"
+					>
 						<span class="mdi mdi-car-3-plus text-xl sm:text-2xl md:text-4xl"></span>
-						<span class="block text-xs sm:text-lg 2xl:text-xl">Автомобили с пробегом</span>
+						<span class="block text-xs sm:text-lg 2xl:text-xl"
+							>Автомобили с пробегом</span
+						>
 					</div>
-					<div class="rounded-lg bg-gray-100 p-1 sm:p-3 flex items-center flex-nowrap gap-1 sm:gap-2 shadow-lg">
+					<div
+						class="rounded-lg bg-gray-100 p-1 sm:p-3 flex items-center flex-nowrap gap-1 sm:gap-2 shadow-lg"
+					>
 						<span class="mdi mdi-autorenew text-xl sm:text-2xl md:text-4xl"></span>
 						<span class="block text-xs sm:text-lg 2xl:text-xl">Trade-in</span>
 					</div>
-					<div class="rounded-lg bg-gray-100 p-1 sm:p-3 flex items-center flex-nowrap gap-1 sm:gap-2 shadow-lg">
+					<div
+						class="rounded-lg bg-gray-100 p-1 sm:p-3 flex items-center flex-nowrap gap-1 sm:gap-2 shadow-lg"
+					>
 						<span class="mdi mdi-car-battery text-xl sm:text-2xl md:text-4xl"></span>
-						<span class="block text-xs sm:text-lg 2xl:text-xl">Продажа запасный частей</span>
+						<span class="block text-xs sm:text-lg 2xl:text-xl"
+							>Продажа запасный частей</span
+						>
 					</div>
-					<div class="rounded-lg bg-gray-100 p-1 sm:p-3 flex items-center flex-nowrap gap-1 sm:gap-2 shadow-lg">
+					<div
+						class="rounded-lg bg-gray-100 p-1 sm:p-3 flex items-center flex-nowrap gap-1 sm:gap-2 shadow-lg"
+					>
 						<span class="mdi mdi-cash-100 text-xl sm:text-2xl md:text-4xl"></span>
-						<span class="block text-xs sm:text-lg 2xl:text-xl">Выкуп автомобилей</span>
+						<span class="block text-xs sm:text-lg 2xl:text-xl"
+							>Выкуп автомобилей</span
+						>
 					</div>
-					<div class="rounded-lg bg-gray-100 p-1 sm:p-3 flex items-center flex-nowrap gap-1 sm:gap-2 shadow-lg">
-						<span class="mdi mdi-credit-card-check text-xl sm:text-2xl md:text-4xl"></span>
+					<div
+						class="rounded-lg bg-gray-100 p-1 sm:p-3 flex items-center flex-nowrap gap-1 sm:gap-2 shadow-lg"
+					>
+						<span
+							class="mdi mdi-credit-card-check text-xl sm:text-2xl md:text-4xl"
+						></span>
 						<span class="block text-xs sm:text-lg 2xl:text-xl">Кредитование</span>
 					</div>
-					<div class="rounded-lg bg-gray-100 p-1 sm:p-3 flex items-center flex-nowrap gap-1 sm:gap-2 shadow-lg">
+					<div
+						class="rounded-lg bg-gray-100 p-1 sm:p-3 flex items-center flex-nowrap gap-1 sm:gap-2 shadow-lg"
+					>
 						<span class="mdi mdi-shield-car text-xl sm:text-2xl md:text-4xl"></span>
 						<span class="block text-xs sm:text-lg 2xl:text-xl">Страхование</span>
 					</div>
-
 				</div>
-
 			</div>
 		</section>
 
@@ -745,7 +842,7 @@
 						>Подробные условия акций</a
 					>
 				</div>
-				<div class="disclamer text-xs" style="display: none;">
+				<div class="disclamer text-xs" style="display: none">
 					<p>
 						* Данный сайт не является публичной офертой. Подробные условия уточняйте в
 						отделе продаж.
@@ -755,46 +852,119 @@
 		</footer>
 
 		<!-- MODALS -->
-		<div class="fixed w-screen h-screen left-0 top-0 bg-black bg-opacity-90 overflow-x-hidden overflow-y-auto hidden modal-overlay z-50" id="common-modal" data-close>
-			<div class="modal-content relative top-20 mb-10 left-1/2 translate-x-[-50%] -translate-y-10 transition-all duration-1000 max-w-xl w-full bg-white font-medium text-dark py-8 px-4 sm:p-8">
-				<div class="w-10 h-10 flex items-center justify-center absolute right-0 top-0 opacity-50 transition-opacity hover:opacity-100 cursor-pointer rotate-45" data-close>
-					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" data-close>
-						<line y1="9.5" x2="20" y2="9.5" stroke="black" data-close/>
-						<line x1="9.5" y1="20" x2="9.5" stroke="black" data-close/>
+		<div
+			class="fixed w-screen h-screen left-0 top-0 bg-black bg-opacity-90 overflow-x-hidden overflow-y-auto hidden modal-overlay z-50"
+			id="common-modal"
+			data-close
+		>
+			<div
+				class="modal-content relative top-20 mb-10 left-1/2 translate-x-[-50%] -translate-y-10 transition-all duration-1000 max-w-xl w-full bg-white font-medium text-dark py-8 px-4 sm:p-8"
+			>
+				<div
+					class="w-10 h-10 flex items-center justify-center absolute right-0 top-0 opacity-50 transition-opacity hover:opacity-100 cursor-pointer rotate-45"
+					data-close
+				>
+					<svg
+						width="20"
+						height="20"
+						viewBox="0 0 20 20"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						data-close
+					>
+						<line y1="9.5" x2="20" y2="9.5" stroke="black" data-close />
+						<line x1="9.5" y1="20" x2="9.5" stroke="black" data-close />
 					</svg>
 				</div>
-				<p class="caption text-center text-3xl mb-2 text-gray-800">Обратная связь</p>
-				<p class="text-center mb-10 font-normal text-gray-600">Оставьте свои данные и мы свяжемся с Вами в ближайшее время!</p>
+				<p class="caption text-center text-3xl mb-2 text-gray-800">
+					Обратная связь
+				</p>
+				<p class="text-center mb-10 font-normal text-gray-600">
+					Оставьте свои данные и мы свяжемся с Вами в ближайшее время!
+				</p>
 				<form class="flex flex-col gap-4" id="rating-form">
-					<input type="hidden" name="form" value="">
-					<input type="email" tabindex="-1" name="email" class="h-0 opacity-0 absolute -z-[100]" placeholder="mail@example.com">
+					<input type="hidden" name="form" value="" />
+					<input
+						type="email"
+						tabindex="-1"
+						name="email"
+						class="h-0 opacity-0 absolute -z-[100]"
+						placeholder="mail@example.com"
+					/>
 					<div class="w-full">
-						<input type="text" name="name" class="border border-black border-opacity-20 transition-all focus:border-opacity-90 focus:border-yellow px-4 py-2.5 mb-1.5 outline-none w-full font-normal" placeholder="Ваше имя">
+						<input
+							type="text"
+							name="name"
+							class="border border-black border-opacity-20 transition-all focus:border-opacity-90 focus:border-yellow px-4 py-2.5 mb-1.5 outline-none w-full font-normal"
+							placeholder="Ваше имя"
+						/>
 						<div class="error-message text-xs text-red-500 hidden name"></div>
 					</div>
 					<div class="w-full">
-						<input type="tel" name="phone" class="border border-black border-opacity-20 transition-all focus:border-opacity-90 focus:border-yellow px-4 py-2.5 mb-1.5 outline-none w-full font-normal" placeholder="+7 (999) 999-99-99*">
-						<div class="error-message text-xs text-red-500 hidden phone">Веден некорректный номер телефона</div>
+						<input
+							type="tel"
+							name="phone"
+							class="border border-black border-opacity-20 transition-all focus:border-opacity-90 focus:border-yellow px-4 py-2.5 mb-1.5 outline-none w-full font-normal"
+							placeholder="+7 (999) 999-99-99*"
+						/>
+						<div class="error-message text-xs text-red-500 hidden phone">
+							Веден некорректный номер телефона
+						</div>
 					</div>
 					<label class="cursor-pointer flex items-center flex-wrap">
-						<input type="checkbox" name="agree" class="absolute w-0 h-0 opacity-0 invisible">
+						<input
+							type="checkbox"
+							name="agree"
+							class="absolute w-0 h-0 opacity-0 invisible"
+						/>
 						<div class="flex flex-wrap gap-x-2 text-gray-800">
-							<span class="fake-checkbox-black mt-0.5 w-4 h-4 border border-black inline-block flex-shrink-0 transition-all relative"></span>
-							<span>Я согласен на</span> <a href="/privacy-policy.pdf" class="text-black underline transition-all hover:no-underline" target="_blank">обработку персональных данных</a>
+							<span
+								class="fake-checkbox-black mt-0.5 w-4 h-4 border border-black inline-block flex-shrink-0 transition-all relative"
+							></span>
+							<span>Я согласен на</span>
+							<a
+								href="/privacy-policy.pdf"
+								class="text-black underline transition-all hover:no-underline"
+								target="_blank"
+								>обработку персональных данных</a
+							>
 						</div>
-						<div class="error-message text-xs text-red-500 mt-1 w-full hidden agree">Чтобы продолжить, установите флажок</div>
+						<div class="error-message text-xs text-red-500 mt-1 w-full hidden agree">
+							Чтобы продолжить, установите флажок
+						</div>
 					</label>
-					<input type="checkbox" name="subscribe" class="absolute w-0 h-0 opacity-0 invisible">
-					<input type="submit" class="btn w-full" value="Отправить">
+					<input
+						type="checkbox"
+						name="subscribe"
+						class="absolute w-0 h-0 opacity-0 invisible"
+					/>
+					<input type="submit" class="btn w-full" value="Отправить" />
 				</form>
 			</div>
 		</div>
 
-		<div class="fixed w-screen h-screen left-0 top-0 bg-black bg-opacity-90 z-50 overflow-x-hidden overflow-y-auto hidden modal-overlay" id="message-modal" data-close>
-			<div class="modal-content relative top-20 mb-10 left-1/2 translate-x-[-50%] -translate-y-10 transition-all duration-1000 max-w-xl w-full bg-white text-gray-800 py-8 px-4 sm:p-8">
-				<div class="w-10 h-10 flex items-center justify-center absolute right-0 top-0 opacity-50 transition-opacity hover:opacity-100 cursor-pointer rotate-45" data-close><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" data-close>
-					<line y1="9.5" x2="20" y2="9.5" stroke="black" data-close/>
-					<line x1="9.5" y1="20" x2="9.5" stroke="black" data-close/>
+		<div
+			class="fixed w-screen h-screen left-0 top-0 bg-black bg-opacity-90 z-50 overflow-x-hidden overflow-y-auto hidden modal-overlay"
+			id="message-modal"
+			data-close
+		>
+			<div
+				class="modal-content relative top-20 mb-10 left-1/2 translate-x-[-50%] -translate-y-10 transition-all duration-1000 max-w-xl w-full bg-white text-gray-800 py-8 px-4 sm:p-8"
+			>
+				<div
+					class="w-10 h-10 flex items-center justify-center absolute right-0 top-0 opacity-50 transition-opacity hover:opacity-100 cursor-pointer rotate-45"
+					data-close
+				>
+					<svg
+						width="20"
+						height="20"
+						viewBox="0 0 20 20"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						data-close
+					>
+						<line y1="9.5" x2="20" y2="9.5" stroke="black" data-close />
+						<line x1="9.5" y1="20" x2="9.5" stroke="black" data-close />
 					</svg>
 				</div>
 				<div class="w-20 h-20 mx-auto mb-10" id="icon"></div>
