@@ -1,5 +1,14 @@
 name: Build and Deploy
-on: [push, pull_request, issues]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  issues:
+    branches:
+      - main
 permissions:
   contents: write
 jobs:
