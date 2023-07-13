@@ -94,79 +94,83 @@
 			</div>
 		</header>
 
-		<section class="banner relative pb-[56.25%]">
-			<div class="absolute z-[15] bg-black/40 inset-0"></div>
-			<div class="absolute inset-0 z-10">
-				<div class="swiper banner-slider-img h-full">
-
+		<section class="banner relative pb-[56.25%] max-[400px]:pb-[70%]">
+			<div class="absolute inset-0">
+				<div class="swiper banner-slider h-full text-white">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<img src="img/banners/gift-banner-1920.jpg" class="absolute h-full w-full object-cover object-center" alt="ALT" loading="lazy" />
+						<div class="swiper-slide" data-swiper-autoplay="4000">
+							<div class="absolute inset-0 bg-black/50 z-[1]"></div>
+							<div class="container h-full relative z-[2]">
+								<div class="h-full flex flex-col justify-center">
+									<h2 class="text-lg sm:text-3xl md:text-4xl lg:text-5xl uppercase font-bold" data-swiper-parallax="-20%">Подарки первым 500 клиентам!</h2>
+								<p
+									data-swiper-parallax="-40%"
+									class="text-xs sm:text-xl md:text-2xl mt-3 sm:mt-5 mb-4 sm:mb-10"
+								>
+									Подробности в официальных дилерских центрах Jetour в России
+								</p>
+								<div data-swiper-parallax="-55%">
+									<a
+										class="popup-link btn white btn-o text-xs sm:text-base !py-1 sm:!py-3"
+										href="#common-modal"
+										data-title="Узнать подробнее"
+										data-form_name="Узнать подробнее. Подарки первым 500 клиентам. Баннер"
+									>
+										Узнать подробнее
+									</a>
+								</div>
+								</div>
+							</div>
+							<img
+								src="img/banners/gift-banner-1920.jpg"
+								class="absolute inset-0 h-full object-cover object-center"
+								alt="ALT"
+								loading="lazy"
+							/>
+							<div class="swiper-lazy-preloader"></div>
 						</div>
 						<div class="swiper-slide">
+							<div class="absolute inset-0 bg-black/50 z-[1]"></div>
+							<div class="container h-full relative z-[2]">
+								<div class="h-full flex flex-col justify-center">
+									<h2 class="text-lg sm:text-3xl md:text-4xl lg:text-5xl uppercase font-bold" data-swiper-parallax="-20%">Новые автомобили по&nbsp;цене заводов изготовителей!</h2>
+									<p data-swiper-parallax="-40%" class="text-xs sm:text-xl md:text-2xl mt-3 sm:mt-5 mb-4 sm:mb-10">Уже доступны для бронирования в&nbsp;дилерском центре Альфа в&nbsp;Самаре!</p>
+									<div data-swiper-parallax="-55%">
+										<a
+											class="popup-link btn white btn-o text-xs sm:text-base !py-1 sm:!py-3"
+											href="#common-modal"
+											data-title="Узнать подробнее"
+											data-form_name="Узнать подробнее. Новые автомобили по цене заводов изготовителей. Баннер"
+										>
+											Узнать подробнее
+										</a>
+									</div>
+								</div>
+							</div>
 							<video
 								muted
 								poster="img/banner.jpg"
-								class="absolute h-full w-full"
+								class="absolute inset-0 h-full object-cover"
 							>
 								<source src="video/banner.mp4" type="video/mp4" />
 							</video>
-						</div>
+							</div>
 					</div>
-
-				</div>
-			</div>
-
-			<div class="absolute inset-0 z-20">
-				<div class="container h-full">
-					<div class="swiper banner-slider-text text-white h-full">
-
-						<div class="swiper-wrapper">
-							<div class="swiper-slide !flex flex-col justify-center" data-swiper-autoplay="3000">
-								<h2 class="text-lg sm:text-3xl md:text-4xl lg:text-5xl uppercase font-bold" data-swiper-parallax="-20%">Подарки первым 500 клиентам!</h2>
-								<p data-swiper-parallax="-40%" class="text-xs sm:text-xl md:text-2xl mt-5 mb-10">Подробности в официальных дилерских центрах Jetour в России</p>
-								<div data-swiper-parallax="-55%">
-									<a
-										class="popup-link btn white btn-o text-xs sm:text-base !py-1 sm:!py-3"
-										href="#common-modal"
-										data-title="Узнать подробнее"
-										data-form_name="Узнать подробнее. Новые автомобили по цене заводов изготовителей. Баннер"
-									>
-										Узнать подробнее
-									</a>
-								</div>
-							</div>
-							<div class="swiper-slide !inline-flex flex-col justify-center">
-								<h2 class="text-lg sm:text-3xl md:text-4xl lg:text-5xl uppercase font-bold" data-swiper-parallax="-20%">Новые автомобили по&nbsp;цене заводов изготовителей!</h2>
-								<p data-swiper-parallax="-40%" class="text-xs sm:text-xl md:text-2xl mt-5 mb-10">Уже доступны для бронирования в&nbsp;дилерском центре Альфа в&nbsp;Самаре!</p>
-								<div data-swiper-parallax="-55%">
-									<a
-										class="popup-link btn white btn-o text-xs sm:text-base !py-1 sm:!py-3"
-										href="#common-modal"
-										data-title="Узнать подробнее"
-										data-form_name="Узнать подробнее. Новые автомобили по цене заводов изготовителей. Баннер"
-									>
-										Узнать подробнее
-									</a>
-								</div>
-							</div>
-						</div>
-
-						<div class="swiper-pagination banner-pagination"></div>
-						<div class="autoplay-progress">
-							<svg viewBox="0 0 48 48">
-								<circle cx="24" cy="24" r="20"></circle>
-							</svg>
-							<span></span>
-						</div>
 	
+					<div class="swiper-pagination banner-pagination"></div>
+	
+					<div class="autoplay-progress">
+						<svg viewBox="0 0 48 48">
+							<circle cx="24" cy="24" r="20"></circle>
+						</svg>
+						<span></span>
 					</div>
+	
+					<div class="swiper-button-prev banner-button-prev !hidden md:!flex"></div>
+					<div class="swiper-button-next banner-button-next !hidden md:!flex"></div>
+	
 				</div>
-				<!-- If we need navigation buttons -->
-				<div class="swiper-button-prev banner-button-prev !hidden md:!flex"></div>
-				<div class="swiper-button-next banner-button-next !hidden md:!flex"></div>
 			</div>
-
 		</section>
 
 		<!-- dashing -->
