@@ -94,48 +94,102 @@
 			</div>
 		</header>
 
-		<section class="relative pb-[56.25%]">
-			<div
-				class="flex flex-col items-center justify-center gap-5 sm:gap-10 px-2 top-3 sm:top-[25%] absolute w-full z-20"
-			>
-				<div
-					class="text-lg sm:text-3xl md:text-4xl lg:text-5xl text-white text-center"
-				>
-					<h1 class="uppercase font-bold">
-						Новые автомобили по&nbsp;цене заводов изготовителей!
-					</h1>
-					<span class="block text-xs sm:text-xl md:text-2xl mt-[2%]"
-						>Уже доступны для бронирования в&nbsp;дилерском центре Альфа
-						в&nbsp;Самаре!</span
-					>
+		<section class="banner relative pb-[56.25%] max-[400px]:pb-[70%]">
+			<div class="absolute inset-0">
+				<div class="swiper banner-slider h-full text-white">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide" data-swiper-autoplay="4000">
+							<div class="absolute inset-0 bg-black/50 z-[1]"></div>
+							<div class="container h-full relative z-[2]">
+								<div class="h-full flex flex-col justify-center">
+									<h2 class="text-lg sm:text-3xl md:text-4xl lg:text-5xl uppercase font-bold" data-swiper-parallax="-20%">Подарки первым 500 клиентам!</h2>
+								<p
+									data-swiper-parallax="-40%"
+									class="text-xs sm:text-xl md:text-2xl mt-3 sm:mt-5 sm:mb-1"
+								>
+									<span class="text-2xl sm:text-4xl">4</span> бесплатных замены масляного фильтра
+								</p>
+								<p
+									data-swiper-parallax="-50%"
+									class="text-xs sm:text-xl md:text-2xl sm:mt-1 mb-1 sm:mb-1"
+								>
+									<span class="text-2xl sm:text-4xl">2</span> бесплатных шиномонтажа
+								</p>
+								<p
+									data-swiper-parallax="-60%"
+									class="text-xs sm:text-xl md:text-2xl sm:mt-5 mb-4 sm:mb-10"
+								>
+									Подробности в официальном дилерском центре Jetour Альфа в Самаре
+								</p>
+								<div data-swiper-parallax="-55%">
+									<a
+										class="popup-link btn white btn-o text-xs sm:text-base !py-1 sm:!py-3"
+										href="#common-modal"
+										data-title="Узнать подробнее"
+										data-form_name="Узнать подробнее. Подарки первым 500 клиентам. Баннер"
+									>
+										Узнать подробнее
+									</a>
+								</div>
+								</div>
+							</div>
+							<img
+								src="img/banners/gift-banner-1920.jpg"
+								class="absolute inset-0 h-full object-cover object-center"
+								alt="ALT"
+								loading="lazy"
+							/>
+							<div class="swiper-lazy-preloader"></div>
+						</div>
+						<div class="swiper-slide">
+							<div class="absolute inset-0 bg-black/50 z-[1]"></div>
+							<div class="container h-full relative z-[2]">
+								<div class="h-full flex flex-col justify-center">
+									<h2 class="text-lg sm:text-3xl md:text-4xl lg:text-5xl uppercase font-bold" data-swiper-parallax="-20%">Новые автомобили по&nbsp;цене заводов изготовителей!</h2>
+									<p data-swiper-parallax="-40%" class="text-xs sm:text-xl md:text-2xl mt-3 sm:mt-5 mb-4 sm:mb-10">Уже доступны для бронирования в&nbsp;дилерском центре Альфа в&nbsp;Самаре!</p>
+									<div data-swiper-parallax="-55%">
+										<a
+											class="popup-link btn white btn-o text-xs sm:text-base !py-1 sm:!py-3"
+											href="#common-modal"
+											data-title="Узнать подробнее"
+											data-form_name="Узнать подробнее. Новые автомобили по цене заводов изготовителей. Баннер"
+										>
+											Узнать подробнее
+										</a>
+									</div>
+								</div>
+							</div>
+							<video
+								muted
+								poster="img/banner.jpg"
+								class="absolute inset-0 h-full object-cover"
+							>
+								<source src="video/banner.mp4" type="video/mp4" />
+							</video>
+							</div>
+					</div>
+
+					<div class="swiper-pagination banner-pagination"></div>
+
+					<div class="autoplay-progress">
+						<svg viewBox="0 0 48 48">
+							<circle cx="24" cy="24" r="20"></circle>
+						</svg>
+						<span></span>
+					</div>
+
+					<div class="swiper-button-prev banner-button-prev !hidden md:!flex"></div>
+					<div class="swiper-button-next banner-button-next !hidden md:!flex"></div>
+
 				</div>
-				<a
-					class="popup-link btn white btn-o text-xs sm:text-base !py-1 sm:!py-3"
-					href="#common-modal"
-					data-title="Узнать подробнее"
-					data-form_name="Узнать подробнее. Баннер"
-				>
-					Узнать подробнее
-				</a>
 			</div>
-			<div class="absolute h-full w-full bg-black/40 z-10"></div>
-			<video
-				autoplay
-				muted
-				loop
-				poster="img/banner.jpg"
-				class="absolute h-full w-full"
-			>
-				<source src="video/banner.mp4" type="video/mp4" />
-			</video>
 		</section>
 
 		<!-- dashing -->
 
 		<section class="relative pb-20 xl:pb-32 z-[1] model" data-dir="dashing">
 			<img
-				data-src="img/dashing/bg.jpg"
-				loading="lazy"
+				src="img/dashing/bg.jpg"
 				class="absolute w-full h-[420px] object-cover z-[-1]"
 			/>
 			<div
@@ -350,8 +404,7 @@
 
 		<section class="relative pb-20 z-[1] model bg-gray-100" data-dir="x90Plus">
 			<img
-				data-src="img/x90Plus/bg.jpg"
-				loading="lazy"
+				src="img/x90Plus/bg.jpg"
 				class="absolute w-full h-[420px] object-cover z-[-1]"
 			/>
 			<div
@@ -733,7 +786,7 @@
 			<div class="container">
 				<h2 class="text-xl sm:text-4xl font-medium mb-14">Наши контакты</h2>
 			</div>
-			<div class="relative h-auto lg:h-[450px]">
+			<div class="relative h-auto lg:h-[550px]">
 				<div
 					class="relative lg:absolute lg:max-w-md w-full lg:top-1/2 lg:-translate-y-1/2 py-8 px-4 sm:px-8 z-10 bg-white map-info"
 				>
@@ -812,6 +865,34 @@
 						<a href="tel:+78469777779" class="font-medium mb-2 sm:text-xl"
 							>+7 (846) 9 777-779</a
 						>
+					</div>
+					<div class="flex flex-nowrap gap-2 sm:gap-4">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-7 h-7 flex-shrink-0"
+						>
+						</svg>
+						<div class="font-medium mb-1 sm:text-md">
+							ООО «ЭКСПЕРТ САМАРА»
+						</div>
+					</div>
+					<div class="flex flex-nowrap gap-2 sm:gap-4 mb-4">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-7 h-7 flex-shrink-0"
+						>
+						</svg>
+						<div class="font-medium mb-2 sm:text-md">
+							ИНН: 7325117822
+						</div>
 					</div>
 					<h3 class="font-bold sm:text-xl mb-4">
 						Остались вопросы? Мы&nbsp;перезвоним!
@@ -977,18 +1058,18 @@
 		<script type="module" src="/src/js/app.js"></script>
 
 		<script>
-			if ("loading" in HTMLImageElement.prototype) {
-				const images = document.querySelectorAll('img[loading="lazy"]');
-				images.forEach((img) => {
-					img.src = img.dataset.src;
-				});
-			} else {
-				// Dynamically import the LazySizes library
-				const script = document.createElement("script");
-				script.src =
-					"https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js";
-				document.body.appendChild(script);
-			}
+			// if ("loading" in HTMLImageElement.prototype) {
+			// 	const images = document.querySelectorAll('img[loading="lazy"]');
+			// 	images.forEach((img) => {
+			// 		img.src = img.dataset.src;
+			// 	});
+			// } else {
+			// 	// Dynamically import the LazySizes library
+			// 	const script = document.createElement("script");
+			// 	script.src =
+			// 		"https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js";
+			// 	document.body.appendChild(script);
+			// }
 		</script>
 	</body>
 </html>
