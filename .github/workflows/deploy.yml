@@ -1,5 +1,5 @@
 name: Build and Deploy
-on: [push, pull_request, create, delete, issues]
+on: [push, pull_request, issues]
 permissions:
   contents: write
 jobs:
