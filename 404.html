@@ -34,10 +34,20 @@
 		}
 		</script>
 		<!-- /Yandex.Metrika counter -->
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-5SN9FQZD');</script>
+		<!-- End Google Tag Manager -->
 	</head>
 
 	<body>
 	<noscript><div><img src="https://mc.yandex.ru/watch/94235674" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SN9FQZD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 		<header class="sticky md:fixed w-full top-0 left-0 bg-white/90 z-30">
 			<div class="container">
 				<div class="flex max-[450px]:flex-col items-center flex-wrap gap-3 sm:gap-0 max-[450px]:justify-center justify-between py-2 md:py-4">
@@ -111,7 +121,7 @@
 			</div>
 			<div class="relative h-auto lg:h-[450px]">
 				<div
-					class="relative lg:absolute lg:max-w-md w-full lg:top-1/2 lg:-translate-y-1/2 py-8 px-4 sm:px-8 z-10 bg-white map-info"
+					class="relative lg:absolute lg:max-w-md w-full lg:top-1/2 lg:-translate-y-1/2 py-8 px-4 sm:px-8 z-10 bg-white map-info shadow-2xl"
 				>
 					<div
 						class="flex items-center flex-nowrap flex-col sm:flex-row gap-1 sm:gap-4 mb-6"
@@ -235,19 +245,16 @@
 						Остались вопросы? Мы&nbsp;перезвоним!
 					</h3>
 					<a
-						class="popup btn black max-w-[400px] w-full block"
-						href="#form_popup"
+						class="popup-link btn black max-w-[400px] w-full block"
+						href="#common-modal"
 						data-title="Заказать звонок"
-						data-comment=""
-						data-form_name="callback"
-						data-form_type_model_name=""
-						data-form_diler=""
+						data-form_name="Заказ звонка. Секция Контакты"
 					>
 						Заказать звонок
 					</a>
 				</div>
 				<div
-					id="map1"
+					id="map"
 					class="map overflow-hidden bg-[url(/img/map_bg.jpg)] bg-cover bg-center static w-full h-[400px] lg:h-full"
 				></div>
 			</div>
@@ -260,7 +267,7 @@
 						>Подробные условия акций</a
 					>
 				</div>
-				<div class="disclamer text-xs" style="display: none;">
+				<div class="disclamer text-xs hidden">
 					<p>
 						* Данный сайт не является публичной офертой. Подробные условия уточняйте в
 						отделе продаж.
