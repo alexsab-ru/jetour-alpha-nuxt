@@ -24,6 +24,8 @@ jobs:
           npm install -g pnpm
           pnpm install --no-frozen-lockfile
           pnpm run generate
+          ls -al >> 1.log
+          cat 1.log
 
       - name: Deploy with gh-pages
         run: |
