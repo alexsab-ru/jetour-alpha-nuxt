@@ -1,21 +1,17 @@
 {
-  "name": "start-parcel-project-with-tailwindcss",
-  "version": "1.0.0",
-  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "name": "nuxt-app",
+  "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vite build --emptyOutDir",
-    "preview": "vite preview"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "deploy": "gh-pages --dotfiles -d .output/public"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.23",
-    "sass": "^1.62.1",
-    "tailwindcss": "^3.3.1",
-    "vite": "^4.3.9"
-  },
-  "dependencies": {
-    "@mdi/font": "^7.2.96",
-    "swiper": "^10.0.4"
+    "@nuxt/devtools": "latest",
+    "gh-pages": "^6.0.0",
+    "nuxt": "^3.7.0"
   }
 }
