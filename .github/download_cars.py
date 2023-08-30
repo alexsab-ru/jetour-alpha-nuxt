@@ -1,7 +1,7 @@
 import xmltodict, json, sys, requests;
 
 try:
-    url = 'https://export.maxposter.ru/autospot/63721.xml'
+    url = 'https://export.maxposter.ru/autospot/6372.xml'
     response = requests.get(url)
     # Проверка успешности запроса
     response.raise_for_status()
