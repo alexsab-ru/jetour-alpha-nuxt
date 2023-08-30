@@ -7,18 +7,24 @@ response.raise_for_status()
 
 xml_data = response.text
 
-def transform_values(item):
-    if isinstance(item, dict):
-        for key, value in item.items():
-            item[key] = transform_values(value)
-    elif isinstance(item, list):
-        for index, item in enumerate(item):
-            item[index] = transform_values(item)
-    elif item is None:
-        return ""
-    elif isinstance(item, str) and item.isdigit():
-        return int(item)
-    return item
+def transform_values(data):
+    if isinstance(data, dict):
+        for key, value in data.items():
+            if value is None:
+                data[key] = ""
+            else:
+                data[key] = transform_values(value)
+    elif isinstance(data, list):
+        for index, item in enumerate(data):
+            if item is None:
+                data[index] = ""
+            else:
+                data[index] = transform_values(item)
+    elif isinstance(data, str):
+        if data.isdigit():
+            return int(data)
+        return data
+    return data
 
 parsed_data = xmltodict.parse(xml_data, xml_attribs=False, force_list=False, force_cdata=False)
 transformed_data = transform_values(parsed_data)
