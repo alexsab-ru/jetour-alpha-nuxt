@@ -10,17 +10,11 @@ xml_data = response.text
 def transform_values(item):
     if isinstance(item, dict):
         for key, value in item.items():
-            if value is None:
-                item[key] = ""
-            else:
-                transform_values(value)
+            item[key] = transform_values(value)
     elif isinstance(item, list):
         for index, item in enumerate(item):
-            if item is None:
-                item[index] = ""
-            else:
-                transform_values(item)
-    elif item == '' or item is None:
+            item[index] = transform_values(item)
+    elif item is None:
         return ""
     elif isinstance(item, str) and item.isdigit():
         return int(item)
