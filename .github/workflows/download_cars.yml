@@ -1,0 +1,42 @@
+name: Download and convert xml feed
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Запускается каждый час
+  push:
+    paths:
+      - '.github/workflows/download_cars.yml'
+
+jobs:
+  download_cars:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Install xml2json tool
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y python3-pip
+        pip3 install xmltodict
+
+    - name: Convert XML to JSON
+      run: |
+        python3 -c "import xmltodict, json, sys; print(json.dumps(xmltodict.parse(open('https://export.maxposter.ru/autospot/6372.xml').read())))" > public/cars.json
+
+    - name: Check for changes
+      id: check_changes
+      run: |
+        git diff --exit-code || echo "changes=true" >> $GITHUB_ENV
+      continue-on-error: true
+
+    - name: Commit changes
+      if: env.changes == 'true'
+      run: |
+        git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+        git add public/cars.json
+        git commit -m "Update cars.json due to detected changes"
+        git push -u "github-actions-bot <support+actions@github.com>"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
