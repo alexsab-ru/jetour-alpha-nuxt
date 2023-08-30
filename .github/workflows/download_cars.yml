@@ -20,10 +20,21 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y python3-pip
         pip3 install xmltodict
+        pip3 install requests
 
     - name: Convert XML to JSON
       run: |
-        python3 -c "import xmltodict, json, sys; print(json.dumps(xmltodict.parse(open('https://export.maxposter.ru/autospot/6372.xml').read())))" > public/cars.json
+        python3 -c "import xmltodict, json, sys, requests;
+        url = 'https://export.maxposter.ru/autospot/6372.xml'
+        response = requests.get(url)
+
+        # Проверка успешности запроса
+        response.raise_for_status()
+
+        xml_data = response.text
+
+        # Конвертация из XML в JSON
+        print(json.dumps(xmltodict.parse(xml_data)))" > public/cars.json
 
     - name: Check for changes
       id: check_changes
