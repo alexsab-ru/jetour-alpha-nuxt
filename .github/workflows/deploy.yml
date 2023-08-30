@@ -1,10 +1,10 @@
 name: Build and Deploy
 on:
   push:
-    branches:
-      - main
     paths-ignore:
       - '.github/workflows/download_cars.yml'
+    branches:
+      - main
   pull_request:
     branches:
       - main

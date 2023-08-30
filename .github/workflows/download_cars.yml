@@ -55,9 +55,11 @@ jobs:
     - name: Commit changes
       if: env.changes == 'true'
       run: |
-        git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+        git config --local user.email "support+actions@github.com"
+        git config --local user.name "github-actions-bot"
         git add public/cars.json
         git commit -m "Update cars.json due to detected changes"
-        git push -u "github-actions-bot <support+actions@github.com>"
+        git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+        git push origin main
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
