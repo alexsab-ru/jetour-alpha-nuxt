@@ -6,6 +6,7 @@ on:
   push:
     paths:
       - '.github/workflows/download_cars.yml'
+      - '.github/download_cars.py'
 
 jobs:
   download_cars:
