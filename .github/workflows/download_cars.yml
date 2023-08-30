@@ -24,7 +24,7 @@ jobs:
 
     - name: Convert XML to JSON
       run: |
-        python3 ./github/download_cars.py > public/cars.json
+        python3 .github/download_cars.py > public/cars.json
 
     - name: Check for changes
       id: check_changes
