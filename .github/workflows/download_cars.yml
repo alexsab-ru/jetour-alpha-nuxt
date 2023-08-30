@@ -15,13 +15,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Create file if it doesn't exist
-      run: |
-        mkdir -p public
-        if [ ! -f public/cars.json ]; then
-          touch public/cars.json
-        fi
-
     - name: Install xml2json tool
       run: |
         sudo apt-get update
