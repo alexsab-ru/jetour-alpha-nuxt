@@ -45,9 +45,9 @@ jobs:
             elif isinstance(item, list):
                 for idx, val in enumerate(item):
                     item[idx] = transform_values(val)
-            elif item == '':
+            elif item is None:
                 return ""
-            elif item.isdigit():
+            elif isinstance(item, str) and item.isdigit():
                 return int(item)
             return item
 
