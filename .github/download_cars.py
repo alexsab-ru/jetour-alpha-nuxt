@@ -1,11 +1,13 @@
 import xmltodict, json, sys, requests;
-url = 'https://export.maxposter.ru/autospot/6372.xml'
-response = requests.get(url)
 
-# Проверка успешности запроса
-response.raise_for_status()
-
-xml_data = response.text
+try:
+    url = 'https://export.maxposter.ru/autospot/63721.xml'
+    response = requests.get(url)
+    # Проверка успешности запроса
+    response.raise_for_status()
+    xml_data = response.text
+except:
+    sys.exit(1)  # Завершение скрипта с кодом ошибки
 
 def transform_values(data):
     if isinstance(data, dict):

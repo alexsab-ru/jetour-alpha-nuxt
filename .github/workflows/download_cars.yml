@@ -24,8 +24,18 @@ jobs:
         pip3 install requests
 
     - name: Convert XML to JSON
+      run: python3 .github/download_cars.py > public/cars_temp.json
+
+    # Проверяем, создан ли временный файл и не пустой ли он
+    - name: Check if cars_temp.json is valid
+      id: check_temp
       run: |
-        python3 .github/download_cars.py > public/cars.json
+        if [[ -f public/cars_temp.json && -s public/cars_temp.json ]]; then
+          mv public/cars_temp.json public/cars.json
+        else
+          echo "Temporary file is not valid, skipping."
+          exit 1
+        fi
 
     - name: Check for changes
       id: check_changes
