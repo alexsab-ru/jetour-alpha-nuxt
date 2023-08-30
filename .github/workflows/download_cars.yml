@@ -38,8 +38,24 @@ jobs:
 
         xml_data = response.text
 
+        def transform_values(item):
+            if isinstance(item, dict):
+                for key in item:
+                    item[key] = transform_values(item[key])
+            elif isinstance(item, list):
+                for idx, val in enumerate(item):
+                    item[idx] = transform_values(val)
+            elif item == '':
+                return ""
+            elif item.isdigit():
+                return int(item)
+            return item
+
+        parsed_data = xmltodict.parse(xml_data, xml_attribs=False, force_list=False, force_cdata=False)
+        transformed_data = transform_values(parsed_data)
+
         # Конвертация из XML в JSON
-        print(json.dumps(xmltodict.parse(xml_data, xml_attribs=False), ensure_ascii=False))" > public/cars.json
+        print(json.dumps(transformed_data, ensure_ascii=False))" > public/cars.json
 
     - name: LS
       run: |
