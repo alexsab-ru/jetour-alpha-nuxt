@@ -39,7 +39,7 @@ jobs:
         xml_data = response.text
 
         # Конвертация из XML в JSON
-        print(json.dumps(xmltodict.parse(xml_data)))" > public/cars.json
+        print(json.dumps(xmltodict.parse(xml_data, xml_attribs=False), ensure_ascii=False))" > public/cars.json
 
     - name: LS
       run: |
