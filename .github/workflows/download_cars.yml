@@ -24,8 +24,8 @@ jobs:
 
     - name: LS
       run: |
-        ls -al > ls.log
-        cat ls.log
+        ls -al
+        ls -al public/
 
     - name: Convert XML to JSON
       run: |
@@ -43,8 +43,8 @@ jobs:
 
     - name: LS
       run: |
-        ls -al > ls.log
-        cat ls.log
+        ls -al
+        ls -al public/
 
     - name: Check for changes
       id: check_changes
