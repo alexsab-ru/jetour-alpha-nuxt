@@ -22,6 +22,11 @@ jobs:
         pip3 install xmltodict
         pip3 install requests
 
+    - name: LS
+      run: |
+        ls -al > ls.log
+        cat ls.log
+
     - name: Convert XML to JSON
       run: |
         python3 -c "import xmltodict, json, sys, requests;
@@ -35,6 +40,11 @@ jobs:
 
         # Конвертация из XML в JSON
         print(json.dumps(xmltodict.parse(xml_data)))" > public/cars.json
+
+    - name: LS
+      run: |
+        ls -al > ls.log
+        cat ls.log
 
     - name: Check for changes
       id: check_changes
