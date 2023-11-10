@@ -1,8 +1,8 @@
 name: Download and convert xml feed
 
 on:
-  schedule:
-    - cron: '0 1 * * *'  # Запускается раз в день в 1 час ночи
+  # schedule:
+    # - cron: '0 1 * * *'  # Запускается раз в день в 1 час ночи
   push:
     paths:
       - '.github/workflows/download_cars.yml'
